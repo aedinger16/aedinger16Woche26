@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "137891800795",
+    "firebase_url": "https://aedinger16woche26-2.firebaseio.com",
+    "project_id": "aedinger16woche26-2",
+    "storage_bucket": "aedinger16woche26-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137891800795:android:24d33e6f4e2b9668",
+        "android_client_info": {
+          "package_name": "com.example.aedinger16woche26"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137891800795-9tpc3teigqoes41cjehn9dv6p3quf6r6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aedinger16woche26",
+            "certificate_hash": "5c06d0f828d225684e5b532a46002fd61271c64b"
+          }
+        },
+        {
+          "client_id": "137891800795-1unk3n9ioh3kttkcgs6jtgrr5cjvga6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa_egzSBLInTR_SrwyHU6Uzv9IN3tw0Ao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "137891800795-1unk3n9ioh3kttkcgs6jtgrr5cjvga6r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
