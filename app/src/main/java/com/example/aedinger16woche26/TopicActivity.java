@@ -22,6 +22,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -98,6 +99,7 @@ public class TopicActivity extends Activity {
                 }
 
                 topicNameForAdapter.add(topicToAdd.getTopicName());
+                Collections.sort(topicNameForAdapter);
                 adapterTopicName.notifyDataSetChanged();
 
                 dialogAddTopic.dismiss();
@@ -128,6 +130,8 @@ public class TopicActivity extends Activity {
                         for (Topic topic : listTopics) {
                             topicNameForAdapter.add(topic.getTopicName());
                         }
+
+                        Collections.sort(topicNameForAdapter);
 
                         adapterTopicName = new ArrayAdapter<String>(TopicActivity.this,android.R.layout.simple_list_item_1, topicNameForAdapter);
                         listViewItems.setAdapter(adapterTopicName);

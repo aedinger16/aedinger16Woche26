@@ -13,6 +13,7 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.Collections;
 import java.util.List;
 
 public class ItemActivity extends Activity {
@@ -33,6 +34,7 @@ public class ItemActivity extends Activity {
         setContentView(R.layout.item_activity);
 
         selectedItems = getIntent().getParcelableArrayListExtra("selectedTopicItems");
+        Collections.shuffle(selectedItems);
 
         db = FirebaseFirestore.getInstance();
 

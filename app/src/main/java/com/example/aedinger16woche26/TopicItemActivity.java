@@ -30,6 +30,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -126,6 +127,8 @@ public class TopicItemActivity extends Activity {
                     e.printStackTrace();
                 }
 
+                Collections.sort(listTopicItems, (c1,c2) -> (c1.getTopicItemName().compareTo(c2.getTopicItemName())));
+
                 adapterTopicItemName = new Adapter_ListView_TopicItem(TopicItemActivity.this, R.layout.listview_adapter_topicitem, listTopicItems);
                 listViewTopicItem.setAdapter(adapterTopicItemName);
 
@@ -160,6 +163,8 @@ public class TopicItemActivity extends Activity {
                                 topicItemNameForAdapter.add(topicItem.getTopicItemName());
                             }
                         }
+
+                        Collections.sort(listTopicItems, (c1,c2) -> (c1.getTopicItemName().compareTo(c2.getTopicItemName())));
 
                         adapterTopicItemName = new Adapter_ListView_TopicItem(TopicItemActivity.this, R.layout.listview_adapter_topicitem, listTopicItems);
                         listViewTopicItem.setAdapter(adapterTopicItemName);
